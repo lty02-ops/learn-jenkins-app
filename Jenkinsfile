@@ -36,7 +36,6 @@ pipeline {
                 sh '''
                     #test -f build/index.html
                     npm test
-                    echo '1'
                 '''
             }
         }
