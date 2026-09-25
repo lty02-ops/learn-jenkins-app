@@ -79,7 +79,7 @@ pipeline {
         stage('Deploy staging') {
                     agent {
                         docker {
-                            image 'mcr.microsoft.com/playwright:v1.39.0-jammy'
+                            image 'mcr.microsoft.com/playwright:v1.63.0-noble'
                             reuseNode true
                         }
                     }
@@ -109,7 +109,7 @@ pipeline {
         stage('Deploy Prod') {
                     agent {
                         docker {
-                            image 'mcr.microsoft.com/playwright:v1.39.0-jammy'
+                            image 'mcr.microsoft.com/playwright:v1.63.0-noble'
                             reuseNode true
                         }
                     }
